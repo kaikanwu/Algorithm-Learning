@@ -41,7 +41,7 @@ public class QuickSort {
             }
 
             //跳出循环，说明左侧的数大于了基数，需要作交换
-            if (start<end){
+            if (start < end){
                 //因为arr[end] 的值已经付给了arr[start],所以这里的值空了，
                 // 可以将arr[start] 赋给 array[end]
                 arr[end] = arr[start];
