@@ -103,6 +103,64 @@ public class P39_DuplicationInArray {
     }
 
 
+    /**
+     *  三、 使用哈希表，不会修改原始数据，
+     *  时间复杂度O（n）
+     *  空间复杂度 O（n）
+     * @param data
+     * @return
+     */
+    public static int getDuplication3(int[] data) {
+        if (data == null || data.length < 2) {
+            return -1;
+        }
+
+        int[] hashTable = new int[data.length];
+        for (int item : data) {
+            if (hashTable[item] >= 1) {
+                return item;
+            }
+            else {
+                hashTable[item] = 1;
+            }
+        }
+
+        return -1;
+
+    }
+
+
+    /**
+     *  四、根据数字特点排序，会修改原始数据，
+     *  时间复杂度O(n)，
+     *  空间复杂度O（1）
+     * @param data
+     * @return
+     */
+    public static int getDuplication4(int[] data) {
+        if (data == null || data.length < 2) {
+            return -1;
+        }
+
+        for (int i = 0; i < data.length; i++) {
+
+            while (data[i] != i) {
+                if (data[i] == data[data[i]]) {
+                    return data[i];
+                } else {
+                    int temp = data[i];
+                    data[i] = data[temp];
+                    data[temp] = temp;
+                }
+            }
+
+        }
+
+        return -1;
+
+    }
+
+
 
 
 
@@ -117,16 +175,12 @@ public class P39_DuplicationInArray {
     public static void main(String[] args){
 
         int[] data = {9,4,1,2,3,3,6,6,8,0};
-        System.out.println(getDuplication(data));
 
-        quickSort(data, 0 , data.length-1);
-        for (int i = 0; i < data.length ; i++) {
-            System.out.print(data[i]+ " ");
-        }
 
         System.out.println();
 
         System.out.println(getDuplication2(data));
+        System.out.println(getDuplication3(data));
 
     }
 
