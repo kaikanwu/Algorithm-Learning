@@ -131,6 +131,7 @@ public class P39_DuplicationInArray {
 
 
     /**
+     *  ===题目一的最优解===
      *  四、根据数字特点排序，会修改原始数据，
      *  时间复杂度O(n)，
      *  空间复杂度O（1）
@@ -157,7 +158,54 @@ public class P39_DuplicationInArray {
         }
 
         return -1;
+    }
 
+
+    /**
+     * 题目二：不修改数组，找出重复的数字
+     * @param arr
+     * @return
+     */
+    public static int getDuplication5(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return -1;
+        }
+
+        //数组值在[start, end]区间内
+        int start = 0;
+        int end = arr.length-2;
+
+        while (start <= end) {
+            int middle = (start+ end)/2 + start;
+            int count = countRange(arr, start, middle);
+
+            if (start == end) {
+                if (count > 1) {
+                    return start;
+                } else {
+                    return -1;
+                }
+
+            }
+
+            if (count > middle - start + 1) {
+                end = middle;
+            }else{
+                start = middle + 1;
+            }
+
+        }
+        return -1;
+    }
+
+    public static int countRange(int[] arr, int start, int end) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (start <= arr[i] && end >= arr[i]) {
+                count++;
+            }
+        }
+        return count;
     }
 
 
@@ -181,6 +229,7 @@ public class P39_DuplicationInArray {
 
         System.out.println(getDuplication2(data));
         System.out.println(getDuplication3(data));
+        System.out.println(getDuplication4(data));
 
     }
 
