@@ -21,7 +21,7 @@ public class SelectionSort {
 
 
     public static void main(String[] args) {
-        int[] arr = {3, 5, 1, 0, 9, 3};
+        int[] arr = {3, 5, 1, 0, 9, 3, 10, 1};
 
         selectionSort(arr);
         SortHelper.printArray(arr);

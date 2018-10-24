@@ -1,4 +1,4 @@
-package dataStructure;
+package structure;
 
 /**
  * 堆结构一般指 二叉堆
