@@ -2,6 +2,8 @@ package pointToOffer;
 
 import structure.ListNode;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Stack;
 
 /**
@@ -63,6 +65,29 @@ public class P58_PrintListInReverseOrder {
 
     }
 
+
+    /**
+     * 方法三： 使用Collections 这个类下的方法 reverse 来反转
+     *
+     * Collection 和 Collections 区别
+     * Collection 是一个集合接口，提空了对集合对象进行基本操作的通用接口方法。
+     * Collections
+     * @param listNode
+     * @return
+     */
+    public static ArrayList<Integer> printListFromTailToHead(ListNode<Integer> listNode) {
+        ArrayList<Integer> ret = new ArrayList<>();
+        while (listNode != null) {
+            ret.add(listNode.val);
+            listNode = listNode.next;
+        }
+
+        Collections.reverse(ret);
+
+        return ret;
+
+    }
+
     /**
      * 打印链表
      * @param head
@@ -95,6 +120,7 @@ public class P58_PrintListInReverseOrder {
 
 
         System.out.println("========");
+        System.out.println(   printListFromTailToHead(head));
 
         print(head);
     }
