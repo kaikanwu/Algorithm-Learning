@@ -1,7 +1,5 @@
 package pointToOffer;
 
-import com.sun.org.apache.regexp.internal.RE;
-import jdk.nashorn.internal.ir.IdentNode;
 import structure.TreeNode;
 
 import java.util.HashMap;
@@ -26,8 +24,8 @@ public class P62_ConstructBinaryTree {
 
     /**
      *  方法 1
-     * @param preOrder
-     * @param inOrder
+     * @param preOrder 前序遍历的结果
+     * @param inOrder 中序遍历的结果
      * @return
      */
     public static TreeNode construct(int[] preOrder, int[] inOrder) {
@@ -39,12 +37,23 @@ public class P62_ConstructBinaryTree {
     }
 
 
+    /**
+     *  constructCore
+     * @param preOrder
+     * @param preOrderStart
+     * @param inOrder
+     * @param inOrderStart
+     * @param length preOrder 的长度
+     * @return
+     */
     public static TreeNode constructCore(int[] preOrder, int preOrderStart, int[] inOrder, int inOrderStart, int length) {
 
         if (length == 0) {
             return null;
         }
 
+        //这部分是为了找到前序遍历的一个数，也就是根节点，在中序遍历的位置， inOrderIndex
+        //根据题意，由于没有重复的数，所以当 if (inOrder[i] == preOrder[preOrderStart]) 时，就可以找到
         int inOrderIndex = -1;
         for (int i = inOrderStart; i < inOrderStart + length; i++) {
             if (inOrder[i] == preOrder[preOrderStart]) {
@@ -53,54 +62,31 @@ public class P62_ConstructBinaryTree {
             }
         }
 
+        //左子树的长度
         int leftLength = inOrderIndex - inOrderStart;
 
+        //根节点 - 前序遍历的第一个数
         TreeNode node = new TreeNode(preOrder[preOrderStart]);
+        //递归
         node.left = constructCore(preOrder, preOrderStart + 1, inOrder, inOrderStart, leftLength);
         node.right = constructCore(preOrder, preOrderStart + leftLength + 1, inOrder, inOrderIndex + 1, length - leftLength - 1);
         return node;
     }
 
+
     /**
-     * 方法 2
-     *
-     * @param pre
-     * @param ints
-     * @return
+     * FOR TEST!
+     * @param args
      */
-
-    private Map<Integer, Integer> indexForInOrders = new HashMap<>();
-
-    public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
-        for (int i = 0; i < in.length; i++) {
-            indexForInOrders.put(in[i], i);
-        }
-        return reConstructBinaryTree(pre, 0, pre.length - 1, 0);
-    }
-
-
-    private TreeNode reConstructBinaryTree(int[] pre, int preL, int preR, int inL) {
-
-        if (preL > preR) {
-            return null;
-        }
-
-        TreeNode root = new TreeNode(pre[preL]);
-
-        int inIndex = indexForInOrders.get(root.val);
-        int leftTreeSize = inIndex - inL;
-        root.left = reConstructBinaryTree(pre, preL + 1, preL + leftTreeSize, inL);
-        root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inL + leftTreeSize + 1);
-
-        return root;
-
-    }
-
-
     public static void main(String[] args) {
 
+        //          1
+        //         /  \
+        //        2    3
+        //       / \
+        //      4   5
 
-        int[] pre = {1, 2, 3, 5, 3};
+        int[] pre = {1, 2, 4, 5, 3};
         int[] in = {4, 2, 5, 1, 3};
 
         TreeNode root = construct(pre, in);
