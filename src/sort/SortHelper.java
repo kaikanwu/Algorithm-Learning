@@ -18,5 +18,6 @@ public class SortHelper {
             System.out.print( i + " ");
 
         }
+        System.out.println();
     }
 }

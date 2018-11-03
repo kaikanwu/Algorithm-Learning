@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.Arrays;
+
 /**
  * 归并排序
  * O（n*logn）
@@ -8,7 +10,10 @@ public class MergeSort {
 
 
     /**
-     * 将数组进行归并排序
+     * 一、归并排序
+     *
+     * 这里是归并排序的自顶向下的排序（使用递归）
+     *
      * @param arr 要排序的数组
      * @param temp 辅助数组
      * @param left 左边界
@@ -30,7 +35,10 @@ public class MergeSort {
 
 
     /**
+     * Merge 函数
+     *
      * 合并两个数组， arr[left...center], arr[center+1...right]
+     * 注意这里的边界，都是前闭后必
      * @param arr
      * @param temp
      * @param left
@@ -72,6 +80,31 @@ public class MergeSort {
     }
 
 
+    /**
+     * 二、归并排序 - 自底向上 Bottom Up
+     * 使用迭代
+     *
+     * @param arr
+     * @param temp
+     */
+    public static void mergeSortBU(int[] arr,int[] temp) {
+        int n = arr.length;
+
+        //第一轮循环，对进行merge的元素个数进行遍历
+        //也就是，第一轮看一个元素，第二轮看两个元素，4，8...
+        for (int sz = 1; sz <= n; sz += sz) {
+
+            //第二轮：每一轮在归并的过程中，元素的起始位置
+            // 也就是第一次对，0 ~ size-1, size ~ 2*size -1  进行归并,
+            // 然后就是 2*size ~ 3*size -1 , 3*size ~ 4*size -1 进行归并
+            for (int i = 0; i < n - sz; i += sz + sz) {
+                // 这里当数组merge到数组后端的时候，后面一段的数组长度可能不足一个 size 大小
+                merge(arr, temp, i, i + sz - 1, Math.min(i + sz + sz - 1, n-1));
+            }
+        }
+    }
+
+
     public static void main(String[] args){
 
 
@@ -79,11 +112,13 @@ public class MergeSort {
         int[] temp = new int[arr.length];
         mergeSort(arr,temp,0, arr.length - 1);
 
-        for (int i :
-             arr) {
-            System.out.print(i + " ");
+        int[] arr2 = arr.clone();
+        mergeSortBU(arr2, temp);
 
-        }
+        SortHelper.printArray(arr);
+        System.out.println("============");
+
+        SortHelper.printArray(arr2);
     }
 
 
