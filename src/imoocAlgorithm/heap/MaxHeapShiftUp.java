@@ -1,6 +1,5 @@
-package structure.heap;
+package imoocAlgorithm.heap;
 
-import java.util.*;
 import java.lang.*;
 
 /**

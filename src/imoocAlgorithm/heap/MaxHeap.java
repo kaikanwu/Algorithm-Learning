@@ -1,4 +1,4 @@
-package structure.heap;
+package imoocAlgorithm.heap;
 
 /**
  * @author kaikanwu
