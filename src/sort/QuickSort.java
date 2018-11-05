@@ -1,9 +1,11 @@
 package sort;
 
+import java.util.Random;
+
 public class QuickSort {
 
     public static void quickSort(int[] arr, int start, int end){
-        if (start > end){
+        if (start >= end){
             return;
         }
 
@@ -60,7 +62,9 @@ public class QuickSort {
 
 
     public static void main(String[] args){
-        int[] arr = {99,5,3,9,2,4,6,1,2,10,66};
+        int[] arr = {99,5,3,9,2,4,6,1,2,10,66,22};
+
+
         quickSort(arr,0,arr.length-1);
         for (int i : arr) {
             System.out.print(i + " " );
