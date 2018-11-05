@@ -1,4 +1,4 @@
-package structure;
+package structure.heap;
 
 /**
  * @author kaikanwu
@@ -16,7 +16,7 @@ public class MaxHeap<Item> {
     public MaxHeap(int capacity) {
         // 由于堆中的元素是从 1 开始，所以需要初始化一个 capacity + 1 大小的数组
         data = (Item[]) new Object[capacity+1];
-        count = 0;
+        this.count = 0;
     }
 
     /**
@@ -35,6 +35,17 @@ public class MaxHeap<Item> {
      */
     public boolean isEmpty() {
         return count == 0;
+    }
+
+
+    public static void main(String[] args) {
+
+        MaxHeap<Integer> maxHeap = new MaxHeap<>(100);
+
+        // 注意这里输出的值会是 0，因为目前这是一个空堆。
+        System.out.println(maxHeap.size());
+
+
     }
 
 }
