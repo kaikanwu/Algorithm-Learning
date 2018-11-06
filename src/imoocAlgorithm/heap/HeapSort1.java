@@ -2,6 +2,9 @@ package imoocAlgorithm.heap;
 
 
 /**
+ *  堆排序
+ *  O(n * logn)
+ *
  * @author kaikanwu
  * @date 05/11/2018
  */

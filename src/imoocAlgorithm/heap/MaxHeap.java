@@ -11,13 +11,41 @@ public class MaxHeap<Item extends Comparable> {
     private int capacity;
 
     /**
-     * 构造函数
+     * 构造函数一
      * @param capacity 堆的最大容纳值
      */
     public MaxHeap(int capacity) {
         data = (Item[]) new Comparable[capacity + 1];
         count = 0 ;
         this.capacity = capacity;
+    }
+
+
+    /**
+     *  构造函数二 ----> Heapify
+     * @param arr 需要排序的数组
+     */
+    public MaxHeap(Item[] arr) {
+
+        int n = arr.length;
+
+        data = (Item[]) new Comparable[n + 1];
+        capacity = n;
+
+        // 将输入的数组赋值给 data[]
+        for (int i = 0; i < n; i++) {
+            data[i + 1] = arr[i];
+        }
+        //堆中元素还是 n 个
+        count = n;
+
+        for (int i = count / 2; i >= 1; i--) {
+            shiftDown(i);
+        }
+
+
+
+
     }
 
 
