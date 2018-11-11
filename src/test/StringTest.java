@@ -11,21 +11,8 @@ import java.io.InputStreamReader;
 public class StringTest {
     public static void main(String[] args) throws IOException {
 
-        // system.in
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-        String read = null;
-        System.out.println("print here:");
-        try {
-            read = bufferedReader.readLine();
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        System.out.println(read);
-
+        short s1 = 1;
+        s1 = (short)(s1 +1);
 
     }
 }
