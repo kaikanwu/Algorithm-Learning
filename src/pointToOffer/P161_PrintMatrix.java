@@ -14,7 +14,7 @@ import java.util.ArrayList;
  *  打印出的顺序应该是：1，2，3，4，8，12，16，15，14，13，9，5，6，7，11，10
  *
  *
- *  
+ *
  * @author kaikanwu
  * @date 11/11/2018
  */
