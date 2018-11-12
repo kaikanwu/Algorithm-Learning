@@ -67,7 +67,7 @@ public class P176_PrintTreeInSpecial {
             System.out.println(arr);
 
         }
-     
+
 
     }
 
