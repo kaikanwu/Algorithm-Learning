@@ -14,20 +14,20 @@ import structure.RandomListNode;
 public class P187_CopyComplexList {
 
     public RandomListNode Clone(RandomListNode head) {
+
         if (head == null) {
             return null;
         }
 
+        // 插入新节点
         RandomListNode cur = head;
-
-
         while (cur != null) {
             RandomListNode clone = new RandomListNode(cur.label);
             clone.next = cur.next;
             cur.next = clone;
             cur = clone.next;
         }
-
+        // 简历 random 连接
         cur = head;
         while (cur != null) {
             RandomListNode clone = cur.next;
@@ -37,7 +37,7 @@ public class P187_CopyComplexList {
             cur = clone.next;
         }
 
-
+        //拆分
         cur = head;
         RandomListNode cloneHead = head.next;
         while (cur.next != null) {
