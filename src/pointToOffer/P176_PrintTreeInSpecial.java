@@ -18,6 +18,7 @@ public class P176_PrintTreeInSpecial {
     public static ArrayList<ArrayList<Integer>> print(TreeNode<Integer> root) {
 
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+        // LinkedList 实现了 Queue 接口，因此我们可以把 LinkedList 当做 Queue 来使用
         Queue<TreeNode<Integer>> queue = new LinkedList<>();
 
         queue.offer(root);
