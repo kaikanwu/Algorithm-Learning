@@ -26,10 +26,8 @@ public class MSTR1  {
         }
 
 
-        List<Map.Entry<String,String>> list = new ArrayList<Map.Entry<String,String>>(map.entrySet());
-        //然后通过比较器来实现排序
-        Collections.sort(list,new Comparator<Map.Entry<String,String>>());
 
+        return "test";
 
 
     }
