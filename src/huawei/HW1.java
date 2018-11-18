@@ -1,4 +1,4 @@
-package test;
+package huawei;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ import java.util.Scanner;
  * @author kaikanwu
  * @date 17/11/2018
  */
-public class HWExample1 {
+public class HW1 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
