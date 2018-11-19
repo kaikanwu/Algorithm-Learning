@@ -21,21 +21,21 @@ public class HW5 {
 
         Scanner scanner = new Scanner(System.in);
 
-
         while (scanner.hasNextLine()) {
+
             String str = scanner.nextLine();
             StringBuilder sb = new StringBuilder(str);
 
-            if (str.length() % 8 != 0) {
-                int n = 9 - str.length() % 8;
+            if (sb.length() % 8 != 0) {
+                int n = 8 - sb.length() % 8;
                 for (int i = 0; i < n; i++) {
-                    sb = sb.append("0");
+                    sb.append("0");
                 }
             }
 
             while (sb.length() >= 8) {
                 System.out.println(sb.substring(0, 8));
-                sb = sb.delete(0, 8);
+                sb.delete(0, 8);
             }
         }
 
