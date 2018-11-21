@@ -6,17 +6,32 @@ package pointToOffer;
  *  数组中的一个或多个整数构成一个子数组。
  *  求所有子数组的和的最大值。要求时间复杂度为0(n)
  *
+ *
+ *  A：
+ *  在 Java 中，整型是有范围的
+ *  Inger 占32位二进制位 首位是符号位0表示正数，1表示负数。还剩31位，2的31次方是2147483648，
+ *  最大数是 2^31-1, 最小数是 -2^31。
+ *
+ *  注意，Min_Value 取反还是等于 Min_Value。因为 2^31超过了整型最大值。
+ *  Max_Value+1 也等于 Min_Value
+ *
  * @author kaikanwu
  * @date 19/11/2018
  */
 public class P218_FindGreatestSumOfSubArray {
 
 
+    /**
+     * 方法一
+     * @param arr
+     * @return
+     */
     public int find(int[] arr) {
 
         if (arr == null || arr.length == 0) {
             return 0;
         }
+
         int greatestSum = Integer.MIN_VALUE;
         int sum = 0;
 
