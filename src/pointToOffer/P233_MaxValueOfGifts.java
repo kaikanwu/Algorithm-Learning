@@ -44,6 +44,7 @@ public class P233_MaxValueOfGifts {
             dp[0] += value[0];
 
             for (int i = 1; i < n; i++) {
+                // 当前点的最大价值 = max(上面点的总价值，左边点的总价值)+ 当前点的总价值
                 dp[i] = Math.max(dp[i], dp[i - 1]) + value[i];
             }
         }
@@ -52,14 +53,43 @@ public class P233_MaxValueOfGifts {
     }
 
 
+    public int getMost2(int[][] board) {
+
+        int n = board.length;
+        int[][] dp = new int[n][n];
+        dp[0][0] = board[0][0];
+
+        for (int i = 1; i < n; i++) {
+            dp[0][i] = dp[0][i - 1] + board[0][i];
+            dp[i][0] = dp[i - 1][0] + board[i][0];
+        }
+
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]) + board[i][j];
+            }
+        }
+
+        return dp[n - 1][n - 1];
+
+    }
+
+
     public static void main(String[] args) {
+        // 二维数组的 int[rows/行][column/列]
         int[][] arr = {
                 {1, 10, 3, 8},
                 {12, 2, 9, 6},
                 {5, 7, 4, 11},
                 {3, 7, 16, 5}};
+        for (int[] a: arr) {
 
-        System.out.println(getMost(arr));
+            System.out.println(a[0]);
+        }
+
+//        System.out.println(String.valueOf(arr[3][2]));
+//        System.out.println(getMost(arr));
 
     }
 }
