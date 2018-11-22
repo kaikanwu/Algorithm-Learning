@@ -11,8 +11,9 @@ import java.io.InputStreamReader;
 public class StringTest {
     public static void main(String[] args) throws IOException {
 
-        short s1 = 1;
-        s1 = (short)(s1 +1);
+        String s = "12258";
+        String s1 = s.substring(1, 2);
+        System.out.println(s1);
 
     }
 }
