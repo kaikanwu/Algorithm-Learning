@@ -1,6 +1,8 @@
 package pointToOffer;
 
 /**
+ * ！！！！！
+ *
  *  Q: 在排序数组中查找数字
  *  统计一个数字在排序数组中出现的次数。
  *  例如，输入{1，2，3，3，3，3，4，5}，和数字3。应该输出 4
@@ -22,12 +24,19 @@ public class P263_GetNumberFromSortedArray {
         return (first == arr.length || arr[first] != k) ? 0 : last - first;
     }
 
+    /**
+     *  注意 二分查找需要根据 题目的不同，而做出变化
+     * @param arr
+     * @param k
+     * @return
+     */
     private static int binarySearch(int[] arr, int k) {
 
         int l = 0;
         int r = arr.length;
         while (l < r) {
             int m = l + (r - l) / 2;
+            // 关键是这步！ 只要
             if (arr[m] >= k) {
                 r = m;
             }
@@ -35,6 +44,7 @@ public class P263_GetNumberFromSortedArray {
                 l = m+1;
             }
         }
+        // 注意这里返回的是 l 左边界
         return  l;
     }
 
