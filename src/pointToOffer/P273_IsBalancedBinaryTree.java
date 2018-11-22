@@ -6,6 +6,8 @@ import structure.TreeNode;
  *  Q: 输入一棵二叉树的根节点，判断该数是不是平衡二叉树。
  *  如果某二叉树中任意节点的左、右子树的深度不超过1，那么它就是一棵平衡二叉树。
  *
+ *
+ *  A: 思路就是根据给出的平衡二叉树的特点来验证输入的二叉树。
  * @author kaikanwu
  * @date 22/11/2018
  */
@@ -25,7 +27,7 @@ public class P273_IsBalancedBinaryTree {
         if (root == null || !isBalanced) {
             return  0;
         }
-        // 递归语句
+        // 核心：递归语句
         int left = depth(root.left);
         int right = depth(root.right);
         // 验证平衡二叉树的条件
