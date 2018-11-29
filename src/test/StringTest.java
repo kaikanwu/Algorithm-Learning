@@ -11,9 +11,11 @@ import java.io.InputStreamReader;
 public class StringTest {
     public static void main(String[] args) throws IOException {
 
-        String s = "12258";
-        String s1 = s.substring(1, 2);
-        System.out.println(s1);
+        ClassLoader loader = StringTest.class.getClassLoader();
+        while (loader != null) {
+            System.out.println(loader);
+            loader = loader.getParent();
+        }
 
     }
 }
