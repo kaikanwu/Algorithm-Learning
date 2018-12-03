@@ -24,10 +24,16 @@ class SingleTon{
 public class Test {
 
     public static void main(String[] args) {
-        SingleTon singleTon = SingleTon.getInstance();
+//        SingleTon singleTon = SingleTon.getInstance();
+//
+//        System.out.println("count1 = " + SingleTon.count1);
+//        System.out.println("count2 = "+ SingleTon.count2);
 
-        System.out.println("count1 = " + SingleTon.count1);
-        System.out.println("count2 = "+ SingleTon.count2);
+
+
+        final StringBuilder sb = new StringBuilder("222");
+        sb.append("555");
+        System.out.println(sb);
 
 
     }
