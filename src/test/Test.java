@@ -31,10 +31,10 @@ public class Test {
 
 
 
-        final StringBuilder sb = new StringBuilder("222");
-        sb.append("555");
-        System.out.println(sb);
-
+        int i = 3 + (4-3)/2;
+        int l = (3+4)/2;
+        System.out.println(i);
+        System.out.println(l);
 
     }
 
