@@ -23,7 +23,7 @@ public class BinarySearch {
         int l = 0, r = arr.length - 1;
         while (l <= r) {
 
-//            int mid = (l+r)/2;
+//            int mid = (l+r)/2; -> 求两个边界的中间值
 //            这是为了防止极端情况下， l+r 造成整型溢出（超过了int的最大范围）
             int mid = l + (r - l) / 2;
             if (arr[mid].compareTo(target) == 0) {
