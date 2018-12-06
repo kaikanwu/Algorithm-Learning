@@ -11,11 +11,15 @@ import java.io.InputStreamReader;
 public class StringTest {
     public static void main(String[] args) throws IOException {
 
-        ClassLoader loader = StringTest.class.getClassLoader();
-        while (loader != null) {
-            System.out.println(loader);
-            loader = loader.getParent();
-        }
+        String s = "12eFG/ TGi.*2";
+        String s2 = "12eFG/ TGi.*2";
 
+        s = s.replaceAll("\\p{P}","");
+//        s2 = s2.replaceAll("\\p{Punct}", "");
+        s2 = s2.replaceAll("\\w", "");
+
+
+        System.out.println(s);
+        System.out.println(s2);
     }
 }

@@ -42,20 +42,5 @@ public class Q88_MergeSortedArray {
     }
 
 
-    public void merge2(int[] nums1, int m, int[] nums2, int n) {
 
-        int[] temp = new int[m + n];
-
-        int left = 0;
-        int mid = m - 1;
-        int right = m + n - 1;
-
-        int i = left;
-        int j = mid +1;
-
-
-
-
-
-    }
 }

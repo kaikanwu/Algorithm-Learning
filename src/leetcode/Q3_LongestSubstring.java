@@ -64,7 +64,7 @@ public class Q3_LongestSubstring {
         int i = 0;
         int j = 0;
 
-        while (i < 0 && j < n) {
+        while ( j < n) {
 
             if (!set.contains(s.charAt(i))) {
                 set.add(s.charAt(i));
@@ -100,6 +100,42 @@ public class Q3_LongestSubstring {
             }
         }
         return result;
+    }
+
+
+    /**
+     * 方法4
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring3(String s) {
+
+        int[] freq = new int[256];
+
+        /**
+         *  滑动窗口为 s[l...r]
+         */
+        int l = 0;
+        int r = -1;
+        int result = 0;
+
+        while (r+1 < s.length()) {
+
+            // 由于这里的 r 值，会变换，所以 if 里需要再次判断
+            if (r+1 <s.length() && freq[s.charAt(r+1)] == 0) {
+                r++;
+                freq[s.charAt(r)]++;
+            }
+            else{
+                freq[s.charAt(l)]--;
+                l++;
+            }
+
+            result = Math.max(result, r - l + 1);
+        }
+        return result;
+
+
     }
 
     private boolean allUnique(String s, int start, int end) {
