@@ -8,27 +8,54 @@ package leetcode;
  * @date 26/11/2018
  */
 public class Q88_MergeSortedArray {
+    /**
+     *  其实就是归并排序里的 merge 两个排好序的数组的操作
+     *  这里的 -- 就是从大往小的排列。
+     *  是最优解！使用的变量也最少！
+     * @param nums1
+     * @param m
+     * @param nums2
+     * @param n
+     */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
 
-        int index1 = m - 1;
-        int index2 = n - 1;
-        int indexMerge = m + n - 1;
+        int i = m - 1;
+        int j = n - 1;
+        int index = m + n - 1;
 
-        while (index1 >= 0 || index2 >= 0) {
+        while (i >= 0 || j >= 0) {
 
-            if (index1 < 0) {
-                nums1[indexMerge--] = nums2[index2--];
+            if (i < 0) {
+                nums1[index--] = nums2[j--];
             }
-            else if (index2 < 0) {
-                nums1[indexMerge--] = nums1[index1--];
+            else if (j < 0) {
+                nums1[index--] = nums1[i--];
             }
-            else if (nums1[index1] > nums2[index2]){
-                nums1[indexMerge--] = nums1[index1--];
+            else if (nums1[i] > nums2[j]){
+                nums1[index--] = nums1[i--];
             }
             else {
-                nums1[indexMerge--] = nums2[index2--];
+                nums1[index--] = nums2[j--];
             }
         }
+    }
+
+
+    public void merge2(int[] nums1, int m, int[] nums2, int n) {
+
+        int[] temp = new int[m + n];
+
+        int left = 0;
+        int mid = m - 1;
+        int right = m + n - 1;
+
+        int i = left;
+        int j = mid +1;
+
+
+
+
+
     }
 }
