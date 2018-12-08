@@ -22,6 +22,12 @@ import java.util.*;
  */
 public class Q349_IntersectionOfTwoArrays {
 
+    /**
+     *  方法一
+     * @param nums1
+     * @param nums2
+     * @return
+     */
     public int[] intersection(int[] nums1, int[] nums2) {
 
 
@@ -64,6 +70,34 @@ public class Q349_IntersectionOfTwoArrays {
     }
 
 
+    public int[] intersection2(int[] nums1, int[] nums2) {
 
-    
+        TreeSet<Integer> recordSet = new TreeSet<>();
+        for (int i :nums1) {
+
+            recordSet.add(i);
+        }
+
+        TreeSet<Integer> resultSet = new TreeSet<>();
+        for (int i: nums2) {
+
+            if (recordSet.contains(i)) {
+                resultSet.add(i);
+            }
+        }
+
+        int[] result = new int[resultSet.size()];
+
+        int j = 0;
+        for (Integer i:resultSet) {
+
+            result[j] = i;
+            j++;
+        }
+        return result;
+    }
+
+
+
+
 }
