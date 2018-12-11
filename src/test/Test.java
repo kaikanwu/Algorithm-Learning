@@ -35,6 +35,7 @@ public class Test {
         int l = (3+4)/2;
         System.out.println(i);
         System.out.println(l);
+        Object obj = new Object();
 
     }
 
