@@ -21,7 +21,7 @@ class SingleTon{
 
 }
 
-public class Test {
+public class Test  {
 
     public static void main(String[] args) {
 //        SingleTon singleTon = SingleTon.getInstance();

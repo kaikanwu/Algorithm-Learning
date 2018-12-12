@@ -14,7 +14,7 @@ package leetcode;
  * @author kaikanwu
  * @date 05/12/2018
  */
-public class Q26_RemoveDuplicatedFromSortedArray {
+public  class Q26_RemoveDuplicatedFromSortedArray {
 
     public static int removeDuplicates(int[] nums) {
 
