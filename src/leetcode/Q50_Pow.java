@@ -23,6 +23,13 @@ public class Q50_Pow {
         return n < 0 ? 1 / result : result;
     }
 
+    /**
+     * Time:O(logn)
+     * Space: O(1)
+     * @param x
+     * @param n
+     * @return
+     */
     public double myPow2(double x, int n) {
         double result = 1;
         long N = Math.abs((long) n);
