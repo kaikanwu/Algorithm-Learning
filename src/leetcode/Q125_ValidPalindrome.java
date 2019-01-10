@@ -12,12 +12,25 @@ package leetcode;
  *      输入: "race a car"
  *      输出: false
  *
+ *  A:  使用双指针来判断字符是否相等。在判断前需要根据题意来处理空格、大小写、标点符号。
+ *
  * @author kaikanwu
  * @date 06/12/2018
  */
 public class Q125_ValidPalindrome {
+
+    /**
+     * 方法1：使用双指针
+     *
+     * Time:O(n) Space:O(1)
+     * @param s
+     * @return
+     */
     public boolean isPalindrome(String s) {
 
+        if (s == null || s.length() == 0) {
+            return true;
+        }
         s = s.toLowerCase();
         s = s.replaceAll(" ", "");
         s = s.replaceAll("\\p{Punct}","");
@@ -40,4 +53,5 @@ public class Q125_ValidPalindrome {
         return true;
 
     }
+
 }
