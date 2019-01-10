@@ -4,15 +4,45 @@
 
 ### LeetCode（更新中）
 
+| ID   | Problem                                                      | Solution                                                     |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 001  | Two Sum 二数之和                                             | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q1_TwoSum.java) |
+| 003  | Longest Substring without repeating characters 无重复字符的最长子串 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q3_LongestSubstring.java) |
+| 011  | Container with most water 盛最多水的容器                     | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q11_ContainerWithMostWater.java) |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+|      |                                                              |                                                              |
+
 
 
 ### 剑指 offer 
 
 已完成第一遍（按顺序刷题）
 
-
-
-
+[按页码查询即可](https://github.com/kaikanwu/Algorithm-Learning/tree/master/src/pointToOffer)
 
 
 
