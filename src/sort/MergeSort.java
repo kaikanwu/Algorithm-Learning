@@ -112,7 +112,6 @@ public class MergeSort {
         int[] temp = new int[arr.length];
         mergeSort(arr,temp,0, arr.length - 1);
 
-
         int[] arr2 = arr.clone();
         mergeSortBU(arr2, temp);
 

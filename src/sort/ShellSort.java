@@ -32,7 +32,6 @@ public class ShellSort {
 
         int n = arr.length;
         for (int gap = n/2; gap > 0; gap /= 2){
-            //
             for (int i = gap; i < n ; i++){
                 insertI(arr, gap, i);
             }
@@ -44,7 +43,6 @@ public class ShellSort {
     private static void insertI(int[] arr, int gap ,int i ){
         int inserted = arr[i];
         int j;
-
         for (j = i-gap; j >= 0 && inserted < arr[j]; j -= gap){
             arr[j+ gap] = arr[j];
         }
@@ -61,25 +59,14 @@ public class ShellSort {
         shellSort(arr);
         shellSort2(arr2);
 
-        for (int i : arr
-             ) {
-
+        for (int i : arr) {
             System.out.print( i +" ");
-
         }
+
         System.out.println();
         System.out.println("=========");
-        for (int i : arr2
-                ) {
-
+        for (int i : arr2) {
             System.out.print( i +" ");
-
         }
-
     }
-
-
-
-
-
 }

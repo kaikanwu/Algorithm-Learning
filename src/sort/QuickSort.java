@@ -12,7 +12,6 @@ public class QuickSort {
         int bound = partition(arr,start,end);
         quickSort(arr, start, bound-1);
         quickSort(arr, bound + 1, end);
-
     }
 
 
@@ -35,7 +34,6 @@ public class QuickSort {
                 arr[start] = arr[end];
             }
 
-
             //从左向右看，依次和基数pivot比较
             while (arr[start] <= pivot && start < end){
                 //如果左侧的数比基数小，则+1，继续比较
@@ -48,12 +46,10 @@ public class QuickSort {
                 // 可以将arr[start] 赋给 array[end]
                 arr[end] = arr[start];
             }
-
         }
 
         //再将基数放回去。
         arr[end] = pivot;
-
         //最后end 和 start 是同一个数，指向同一个位置，这个位置左侧的数都比pivot小，
         //右侧的数都比pivot大。
         return end;
@@ -63,7 +59,6 @@ public class QuickSort {
 
     public static void main(String[] args){
         int[] arr = {99,5,3,9,2,4,6,1,2,10,66,22};
-
 
         quickSort(arr,0,arr.length-1);
         for (int i : arr) {
