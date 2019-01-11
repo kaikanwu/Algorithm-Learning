@@ -13,16 +13,20 @@ public class BinarySearch {
     /**
      * 我们的算法不允许产生实例
      */
-    private BinarySearch() {
+    private BinarySearch() {}
 
-    }
-
+    /**
+     * Time: O(logn)
+     * Space: O(1)
+     * @param arr
+     * @param target
+     * @return
+     */
     public static int find(Comparable[] arr, Comparable target) {
 
         // 在 arr[l,r] 的返回里查找 target
         int l = 0, r = arr.length - 1;
         while (l <= r) {
-
 //            int mid = (l+r)/2; -> 求两个边界的中间值
 //            这是为了防止极端情况下， l+r 造成整型溢出（超过了int的最大范围）
             int mid = l + (r - l) / 2;
@@ -43,15 +47,16 @@ public class BinarySearch {
         return -1;
     }
 
-
+    /**
+     * Test
+     * @param args
+     */
     public static void main(String[] args) {
         int n = 100;
         Integer[] arr = new Integer[n];
         for (int i = 0; i < n; i++) {
             arr[i] = new Integer(i);
         }
-
-
         System.out.println(BinarySearch.find(arr, 1));
     }
 

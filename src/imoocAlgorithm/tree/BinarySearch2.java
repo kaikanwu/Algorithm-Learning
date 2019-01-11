@@ -2,8 +2,6 @@ package imoocAlgorithm.tree;
 
 /**
  *  二分查找法 --- 递归法
- *
- *
  * @author kaikanwu
  * @date 07/11/2018
  */
@@ -13,14 +11,18 @@ public class BinarySearch2 {
 
     }
 
-
+    /**
+     * 递归方法
+     */
     public static int find(Comparable[] arr, Comparable target) {
-
 
         return find(arr, 0, arr.length - 1, target);
     }
 
 
+    /**
+     * 辅助函数
+     */
     private static int find(Comparable[] arr, int l, int r, Comparable target) {
 
         if (l > r) {
