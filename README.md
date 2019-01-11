@@ -6,6 +6,12 @@
 
 ### LeetCode（更新中）
 
+代码中包含：
+
+- 题目介绍
+- 解法介绍
+- 基本的代码注释
+
 
 
 | ID   | Problem                                        | Solution                                                     |
@@ -20,7 +26,7 @@
 | 075  | Sort Colors                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q75_SortColors.java) |
 | 080  | Remove Duplicated From Sorted Array II         | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q80_RemoveDuplicatedFromSortedArrayII.java) |
 | 088  | Merge Sorted Array                             | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q88_MergeSortedArray.java) |
-| 101  | Symmetric Tree                                 |                                                              |
+| 101  | Symmetric Tree                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q101_SymmetricTree.java) |
 | 125  | Valid Palindrome                               | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q125_ValidPalindrome.java) |
 | 141  | LinkedList Cycle                               | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q141_LinkedListCycle.java) |
 | 153  | Find MinimumIn Roasted Sorted Array            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q153_FindMinimumInRoastedSortedArray.java) |
@@ -70,4 +76,12 @@
 
 [希尔排序 Shell Sort](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/sort/ShellSort.java)
 
-堆排序
+[堆排序 Heap Sort](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/imoocAlgorithm/heap/HeapSort3.java)
+
+
+
+### 二分查找
+
+[二分查找（迭代版本）](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/imoocAlgorithm/tree/BinarySearch.java)
+
+[二分查找（递归版本）](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/imoocAlgorithm/tree/BinarySearch2.java)
