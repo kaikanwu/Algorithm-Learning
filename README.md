@@ -12,7 +12,7 @@
 - 解法介绍
 - 基本的代码注释
 
-
+题号：
 
 | ID   | Problem                                        | Solution                                                     |
 | ---- | :--------------------------------------------- | ------------------------------------------------------------ |
@@ -42,13 +42,17 @@
 | 347  | Top K Frequent Elements                        | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q347_TopKFrequentElements.java) |
 | 349  | Intersection Of Two Arrays                     | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q349_IntersectionOfTwoArrays.java) |
 | 350  | Intersection Of Two Arrays II                  | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q350_IntersectionOfTwoArrays.java) |
-| 371  |                                                |                                                              |
+| 371  | Sum of Two Integers                            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q371_SumOfTwoIntegers.java) |
 | 392  | Is Subsequence                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q392_IsSubsequence.java) |
 | 435  | Non Overlaping Intervals                       | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q435_NonOverlapingIntervals.java) |
 | 451  | Sort Characters By Frequency                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q451_SortCharactersByFrequency.java) |
 | 455  | Assign Cookies                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q455_AssignCookies.java) |
 
 
+
+分类：
+
+位运算：[371. Sum of Two Integers](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q371_SumOfTwoIntegers.java)
 
 
 
