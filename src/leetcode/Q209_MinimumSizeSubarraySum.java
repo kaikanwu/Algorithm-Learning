@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.Arrays;
-
 /**
  *  Q:  给定一个含有 n 个正整数的数组和一个正整数 s ，找出该数组中满足其和 ≥ s 的长度最小的连续子数组。如果不存在符合条件的连续子数组，返回 0。
  *
@@ -26,8 +24,6 @@ public class Q209_MinimumSizeSubarraySum {
      * @return
      */
     public int minSubArrayLen(int s, int[] nums) {
-
-
         /**
          * nums[l...r] 为我们的滑动窗口
          */

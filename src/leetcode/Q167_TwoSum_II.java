@@ -11,12 +11,18 @@ package leetcode;
  *      输入: numbers = [2, 7, 11, 15], target = 9
  *      输出: [1,2]
  *      解释: 2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 。
+ *
+ *   A: 双指针
+ *
  * @author kaikanwu
  * @date 24/11/2018
  */
 public class Q167_TwoSum_II {
 
-
+    /**
+     * Time:O(n)
+     * Space: O(1)
+     */
     public int[] twoSum(int[] numbers, int target) {
 
         int i = 0;
@@ -27,24 +33,21 @@ public class Q167_TwoSum_II {
         while (i < j) {
 
             int sum = numbers[i] + numbers[j];
-
             if (sum == target) {
+                // 根据题意，返回的下标不是从0开始
                 result[0] = i+1;
                 result[1] = j+1;
                 return result;
             }
-
             else if (sum < target) {
+                // 因为数组是升序，当目前的 sum 小于 target 时，只需要让 i + 1
                 i++;
             }
             else {
                 j--;
             }
-
         }
         return result;
-
-
     }
 
 
@@ -56,12 +59,8 @@ public class Q167_TwoSum_II {
         int[] result = t.twoSum(arr, 9);
         for (int i: result
              ) {
-
             System.out.println(i);
-
         }
-
-
     }
 
 

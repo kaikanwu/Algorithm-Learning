@@ -26,12 +26,9 @@ public class Q524_LongestWordInDictionaryThroughDeleting {
             if (isValid(s, target)) {
                 longestWord = target;
             }
-
         }
-
         return longestWord;
     }
-
 
     private boolean isValid(String s, String target){
 
@@ -44,6 +41,5 @@ public class Q524_LongestWordInDictionaryThroughDeleting {
             i++;
         }
         return j == target.length();
-
     }
 }
