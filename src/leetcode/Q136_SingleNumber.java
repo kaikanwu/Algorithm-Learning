@@ -22,9 +22,6 @@ public class Q136_SingleNumber {
      *
      * 根据以上特性，我们可以理解把所有数字放在一起做亦或操作，会让两个相同的数字亦或为0，
      * 最后就剩下 0^ single number = single number
-     *
-     * @param nums
-     * @return
      */
     public int singleNumber(int[] nums) {
         int result = 0;
