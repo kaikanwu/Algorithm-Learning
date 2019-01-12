@@ -28,6 +28,7 @@
 | 088  | Merge Sorted Array                             | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q88_MergeSortedArray.java) |
 | 101  | Symmetric Tree                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q101_SymmetricTree.java) |
 | 125  | Valid Palindrome                               | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q125_ValidPalindrome.java) |
+| 136  | Single Number                                  | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q136_SingleNumber.java) |
 | 141  | LinkedList Cycle                               | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q141_LinkedListCycle.java) |
 | 153  | Find MinimumIn Roasted Sorted Array            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q153_FindMinimumInRoastedSortedArray.java) |
 | 167  | Two Sum II                                     | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q167_TwoSum_II.java) |
@@ -52,7 +53,11 @@
 
 分类：
 
-位运算：[371. Sum of Two Integers](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q371_SumOfTwoIntegers.java)
+位运算：
+
+[136. Single Number](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q136_SingleNumber.java)
+
+[371. Sum of Two Integers](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q371_SumOfTwoIntegers.java)
 
 
 
