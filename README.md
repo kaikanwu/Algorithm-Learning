@@ -21,6 +21,7 @@
 | 011  | Container with most water                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q11_ContainerWithMostWater.java) |
 | 026  | Remove Duplicated From Sorted Array            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q26_RemoveDuplicatedFromSortedArray.java) |
 | 027  | Remove Element                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q27_RemoveElement.java) |
+| 046  | Permutations                                   |                                                              |
 | 050  | Pow( x, n )                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q50_Pow.java) |
 | 069  | sqrt (square root 平方根)                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q69_Sqrtx.java) |
 | 075  | Sort Colors                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q75_SortColors.java) |
