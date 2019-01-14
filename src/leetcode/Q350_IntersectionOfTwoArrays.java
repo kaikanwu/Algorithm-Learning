@@ -1,6 +1,5 @@
 package leetcode;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -22,6 +21,8 @@ import java.util.HashMap;
  *      如果给定的数组已经排好序呢？你将如何优化你的算法？
  *      如果 nums1 的大小比 nums2 小很多，哪种方法更优？
  *      如果 nums2 的元素存储在磁盘上，磁盘内存是有限的，并且你不能一次加载所有的元素到内存中，你该怎么办？
+ *
+ *  A:  使用 HashMap
  *
  * @author kaikanwu
  * @date 08/12/2018
@@ -45,6 +46,7 @@ public class Q350_IntersectionOfTwoArrays {
         ArrayList<Integer> resultList = new ArrayList<>();
         for (int i : nums2) {
 
+            // 这里避免重复添加到 resultList中
             if (map.containsKey(i) && map.get(i) > 0) {
                 resultList.add(i);
                 map.put(i, map.get(i) - 1);
@@ -57,6 +59,11 @@ public class Q350_IntersectionOfTwoArrays {
             result[j] = i;
             j++;
         }
+
+        // 使用新特性
+        // return result.stream()
+        //				    .mapToInt(Integer::intValue)
+        //					.toArray();
         return result;
 
     }

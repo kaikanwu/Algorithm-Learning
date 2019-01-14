@@ -66,7 +66,13 @@
 
 [122. Best Time To Buy And Sell Stock](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q122_BestTimeToBuyAndSellStockII.java)
 
+[136. Single Number](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q136_SingleNumber.java)
+
 [189. Rotate Array](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q189_RotateArray.java)
+
+[217. Contains Duplicate](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q217_ContainsDuplicate.java)
+
+[350.  Intersection of Two Arrays](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q350_IntersectionOfTwoArrays.java)
 
 
 
