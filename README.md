@@ -35,6 +35,7 @@
 | 141  | LinkedList Cycle                               | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q141_LinkedListCycle.java) |
 | 153  | Find MinimumIn Roasted Sorted Array            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q153_FindMinimumInRoastedSortedArray.java) |
 | 167  | Two Sum II                                     | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q167_TwoSum_II.java) |
+| 189  | Rotate Array                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q189_RotateArray.java) |
 | 202  | Happy Number                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q202_HappyNumber.java) |
 | 206  | Reverse Linked List                            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q206_ReverseLinkedList.java) |
 | 209  | Minimum Size Subarray Sum                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q209_MinimumSizeSubarraySum.java) |
@@ -58,6 +59,16 @@
 
 分类：
 
+数组：
+
+[26. Remove Duplicates from Sorted Array](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q26_RemoveDuplicatedFromSortedArray.java)
+
+[122. Best Time To Buy And Sell Stock](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q122_BestTimeToBuyAndSellStockII.java)
+
+[189. Rotate Array](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q189_RotateArray.java)
+
+
+
 位运算：
 
 [136. Single Number](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q136_SingleNumber.java)
@@ -67,6 +78,10 @@
 双指针：
 
 [240. Search A 2D Matrix II](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q240_SearchA2DMatrixII.java)
+
+
+
+
 
 
 
