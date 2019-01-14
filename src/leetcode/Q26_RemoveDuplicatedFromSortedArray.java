@@ -11,6 +11,9 @@ package leetcode;
  *      你不需要考虑数组中超出新长度后面的元素。
  *
  *
+ *  A： 因为需要原地删除，所以这里用i指针代表删除后的数组，j指针指向最初的数组，两个指针都操作同一个数组。
+ *
+ *
  * @author kaikanwu
  * @date 05/12/2018
  */
@@ -18,6 +21,7 @@ public  class Q26_RemoveDuplicatedFromSortedArray {
 
     public static int removeDuplicates(int[] nums) {
 
+        // 注意起始都是 1
         int i = 1;
         for (int j = 1; j < nums.length; j++) {
 
@@ -29,9 +33,7 @@ public  class Q26_RemoveDuplicatedFromSortedArray {
     }
 
     public static void main(String[] args) {
-
         int[] arr = {0,0,1,1,1,2,2,3,3,4,5,5};
-
         System.out.println(removeDuplicates(arr));
 
     }
