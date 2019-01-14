@@ -40,6 +40,7 @@
 | 206  | Reverse Linked List                            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q206_ReverseLinkedList.java) |
 | 209  | Minimum Size Subarray Sum                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q209_MinimumSizeSubarraySum.java) |
 | 215  | Kth Largest Element In An Array                | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q215_KthLargestElementInAnArray.java) |
+| 217  | Contains Duplicate                             | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q217_ContainsDuplicate.java) |
 | 240  | Search A 2D Matrix II                          | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q240_SearchA2DMatrixII.java) |
 | 242  | Valid Anagram                                  | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q242_ValidAnagram.java) |
 | 283  | Move Zeros                                     | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q283_MoveZeros.java) |
