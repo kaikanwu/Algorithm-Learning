@@ -21,6 +21,7 @@
 | 011  | Container with most water                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q11_ContainerWithMostWater.java) |
 | 026  | Remove Duplicated From Sorted Array            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q26_RemoveDuplicatedFromSortedArray.java) |
 | 027  | Remove Element                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q27_RemoveElement.java) |
+| 036  | Valid Sudoku                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q36_ValidSudoku.java) |
 | 046  | Permutations                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q46_Permutations.java) |
 | 050  | Pow( x, n )                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q50_Pow.java) |
 | 066  | Plus One                                       | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q66_PlusOne.java) |
@@ -64,6 +65,8 @@
 数组：
 
 [26. Remove Duplicates from Sorted Array](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q26_RemoveDuplicatedFromSortedArray.java)
+
+[36. Valid Sudoku](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q36_ValidSudoku.java)
 
 [66. Plus One](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q66_PlusOne.java)
 
