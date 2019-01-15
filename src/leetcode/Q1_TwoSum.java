@@ -13,9 +13,6 @@ public class Q1_TwoSum {
     /**
      *   TC: O(n)
      *   SC: O(n)
-      * @param nums
-     * @param target
-     * @return
      */
     public int[] twoSum(int[] nums, int target) {
 
@@ -40,14 +37,6 @@ public class Q1_TwoSum {
 
         return result;
     }
-
-
-    /**
-     * HashMap 的操作
-     * put() --- 添加一个key, value 到 HashMap 中
-     * .get() --- 根据key，找到对应的 value
-     *
-     */
 
 
     /**

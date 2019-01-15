@@ -18,14 +18,11 @@ package leetcode;
 public class Q283_MoveZeros {
     /**
      * 方法一
-     *
-     * 时间复杂度 O(n)
-     * 空间复杂度 O(1)
+     * Time: O(n)
+     * Space: O(1)
      * @param nums
      */
     public static void moveZeroes(int[] nums) {
-
-
         int i = 0;
         for (int num : nums) {
 
@@ -41,7 +38,6 @@ public class Q283_MoveZeros {
 
     /**
      * 方法二 交换
-     * @param nums
      */
     public static void moveZeroes2(int[] nums) {
 
@@ -58,7 +54,6 @@ public class Q283_MoveZeros {
                 else {
                     i ++;
                 }
-
             }
         }
 
