@@ -23,6 +23,7 @@
 | 027  | Remove Element                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q27_RemoveElement.java) |
 | 046  | Permutations                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q46_Permutations.java) |
 | 050  | Pow( x, n )                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q50_Pow.java) |
+| 066  | Plus One                                       | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q66_PlusOne.java) |
 | 069  | sqrt (square root 平方根)                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q69_Sqrtx.java) |
 | 075  | Sort Colors                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q75_SortColors.java) |
 | 080  | Remove Duplicated From Sorted Array II         | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q80_RemoveDuplicatedFromSortedArrayII.java) |
