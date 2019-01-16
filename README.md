@@ -23,6 +23,7 @@
 | 027  | Remove Element                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q27_RemoveElement.java) |
 | 036  | Valid Sudoku                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q36_ValidSudoku.java) |
 | 046  | Permutations                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q46_Permutations.java) |
+| 048  | Rotate Image                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q48_RotateImage.java) |
 | 050  | Pow( x, n )                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q50_Pow.java) |
 | 066  | Plus One                                       | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q66_PlusOne.java) |
 | 069  | sqrt (square root 平方根)                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q69_Sqrtx.java) |
@@ -67,6 +68,8 @@
 [26. Remove Duplicates from Sorted Array](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q26_RemoveDuplicatedFromSortedArray.java)
 
 [36. Valid Sudoku](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q36_ValidSudoku.java)
+
+[48. Rotate Image](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q48_RotateImage.java)
 
 [66. Plus One](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q66_PlusOne.java)
 
