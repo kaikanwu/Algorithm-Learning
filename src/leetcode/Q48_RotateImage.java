@@ -14,7 +14,6 @@ public class Q48_RotateImage {
     /**
      * Time: O(n^2)
      * Space: O(1)
-     * @param matrix
      */
     public void rotate(int[][] matrix) {
 

@@ -22,8 +22,6 @@ public class Q3_LongestSubstring {
 
     /**
      * 使用 HashMap
-     * @param s
-     * @return
      */
     public int lengthOfLongestSubstring(String s) {
 
@@ -52,8 +50,6 @@ public class Q3_LongestSubstring {
      *  空间复杂度：O(min(m, n))O(min(m,n)), 与之前的方法相同。
      *  滑动窗口法需要 O(k)O(k) 的空间，其中 kk 表示 Set 的大小。
      *  而Set的大小取决于字符串 nn 的大小以及字符集/字母 mm 的大小。
-     * @param s
-     * @return
      */
     public int lengthOfLongestSubstring1(String s) {
 

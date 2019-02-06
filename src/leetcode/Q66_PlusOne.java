@@ -15,8 +15,6 @@ public class Q66_PlusOne {
     /**
      * Time:O(n)
      * Space:O(n) 最差情况下需要开辟新的数组
-     * @param digits
-     * @return
      */
     public static int[] plusOne(int[] digits) {
 
