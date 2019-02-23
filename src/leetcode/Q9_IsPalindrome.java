@@ -64,7 +64,7 @@ public class Q9_IsPalindrome {
      * @param x
      * @return
      */
-    public static boolean isPlindrome3(int x) {
+    public static boolean isPalindrome3(int x) {
         if (x < 0) {
             return false;
         }
