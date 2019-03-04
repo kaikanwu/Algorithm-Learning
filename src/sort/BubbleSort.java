@@ -14,7 +14,6 @@ public class BubbleSort {
                     arr[j + 1] = temp;
                 }
             }
-
         }
     }
 
@@ -26,8 +25,7 @@ public class BubbleSort {
 
         bubbleSort(arr2);
 
-        for (int i : arr2
-             ) {
+        for (int i : arr2) {
             System.out.print(i + " " );
 
         }
