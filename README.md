@@ -39,6 +39,7 @@
 | 141  | LinkedList Cycle                               | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q141_LinkedListCycle.java) |
 | 153  | Find MinimumIn Roasted Sorted Array            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q153_FindMinimumInRoastedSortedArray.java) |
 | 167  | Two Sum II                                     | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q167_TwoSum_II.java) |
+| 169  | Majority Element                               | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q169_MajorityElement.java) |
 | 189  | Rotate Array                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q189_RotateArray.java) |
 | 202  | Happy Number                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q202_HappyNumber.java) |
 | 206  | Reverse Linked List                            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q206_ReverseLinkedList.java) |
