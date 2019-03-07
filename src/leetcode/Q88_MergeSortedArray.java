@@ -31,6 +31,7 @@ public class Q88_MergeSortedArray {
         while (i >= 0 || j >= 0) {
 
             if (i < 0) {
+                // 根据题意，num1 有足够的空间，所以这里往 nums1 放
                 nums1[index--] = nums2[j--];
             }
             else if (j < 0) {
