@@ -56,6 +56,7 @@
 | 349  | Intersection Of Two Arrays                     | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q349_IntersectionOfTwoArrays.java) |
 | 350  | Intersection Of Two Arrays II                  | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q350_IntersectionOfTwoArrays.java) |
 | 371  | Sum of Two Integers                            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q371_SumOfTwoIntegers.java) |
+| 387  | First Unique Char                              | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q387_FirstUniqueChar.java) |
 | 392  | Is Subsequence                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q392_IsSubsequence.java) |
 | 435  | Non Overlaping Intervals                       | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q435_NonOverlapingIntervals.java) |
 | 451  | Sort Characters By Frequency                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q451_SortCharactersByFrequency.java) |
