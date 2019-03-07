@@ -15,7 +15,18 @@ package leetcode;
  * @date 06/12/2018
  */
 public class Q344_ReverseString {
+
+    /**
+     * Time:    O(n)
+     * Space:   O(n)
+     * 使用了长度为 n 的辅助空间
+     *
+     */
     public String reverseString(String s) {
+
+        if (s == null) {
+            return null;
+        }
 
         int i = 0;
         int j = s.length() - 1;
