@@ -18,6 +18,7 @@
 | ---- | :--------------------------------------------- | ------------------------------------------------------------ |
 | 001  | Two Sum                                        | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q1_TwoSum.java) |
 | 003  | Longest Substring without repeating characters | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q3_LongestSubstring.java) |
+| 008  | String to Integer                              | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q8_StringToIntegerATOI.java) |
 | 009  | IsPalindrome                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q9_IsPalindrome.java) |
 | 011  | Container with most water                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q11_ContainerWithMostWater.java) |
 | 026  | Remove Duplicated From Sorted Array            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q26_RemoveDuplicatedFromSortedArray.java) |
