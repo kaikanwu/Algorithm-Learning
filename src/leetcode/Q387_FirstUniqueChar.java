@@ -19,11 +19,16 @@ public class Q387_FirstUniqueChar {
 
     /**
      * Time: O(n)
-     * Space:
-     * @param s
-     * @return
+     * Space: O(m) -> 这里是小写字母，所以是26个，如果是全部 ascii 字符，那么就是256个
+     *
+     * 这个方法需要遍历字符串两次
      */
     public int firstUnique(String s) {
+
+        // 处理边界情况
+        if (s == null || s.length() == 0) {
+            return -1;
+        }
 
         // 26：这里指一共有26个英文字符，可以使用更多来表示更多的字符
         int[] freq = new int[26];
@@ -43,7 +48,5 @@ public class Q387_FirstUniqueChar {
         }
 
         return -1;
-
-
     }
 }
