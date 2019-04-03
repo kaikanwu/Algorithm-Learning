@@ -50,6 +50,7 @@
 | 234  | Palindrome Linked List                         | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q234_ParlindromeLinkedList.java) |
 | 240  | Search A 2D Matrix II                          | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q240_SearchA2DMatrixII.java) |
 | 242  | Valid Anagram                                  | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q242_ValidAnagram.java) |
+| 268  | Missing Number                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q268_MissingNumber.java) |
 | 283  | Move Zeros                                     | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q283_MoveZeros.java) |
 | 290  | Word Pattern                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q290_WordPattern.java) |
 | 344  | Reverse String                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q344_ReverseString.java) |
