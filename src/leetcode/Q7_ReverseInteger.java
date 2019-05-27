@@ -21,6 +21,10 @@ package leetcode;
  */
 public class Q7_ReverseInteger {
 
+    /**
+     *  Time Complexity: O(n)
+     *  Space Complexity: O(1)
+     */
     public int reverse(int x) {
         long index = 0;
 
