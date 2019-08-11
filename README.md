@@ -19,12 +19,15 @@
 | ---- | :--------------------------------------------- | ------------------------------------------------------------ |
 | 001  | Two Sum                                        | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q1_TwoSum.java) |
 | 003  | Longest Substring without repeating characters | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q3_LongestSubstring.java) |
+| 007  | Reverse Integer                                | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q7_ReverseInteger.java) |
 | 008  | String to Integer                              | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q8_StringToIntegerATOI.java) |
 | 009  | IsPalindrome                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q9_IsPalindrome.java) |
 | 011  | Container with most water                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q11_ContainerWithMostWater.java) |
+| 014  | Longest Common Prefix                          | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q14_LongestCommonPrefix.java) |
 | 026  | Remove Duplicated From Sorted Array            | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q26_RemoveDuplicatedFromSortedArray.java) |
 | 027  | Remove Element                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q27_RemoveElement.java) |
 | 036  | Valid Sudoku                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q36_ValidSudoku.java) |
+| 038  | Count And Say                                  | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q38_CountAndSay.java) |
 | 046  | Permutations                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q46_Permutations.java) |
 | 048  | Rotate Image                                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q48_RotateImage.java) |
 | 050  | Pow( x, n )                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q50_Pow.java) |
