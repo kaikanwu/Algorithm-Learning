@@ -31,6 +31,7 @@ public class Q746_MinCostClimbingStairs {
         d[1] = cost[1];
 
         for (int i = 2; i < n; i++) {
+            // d[i] 表示当前爬到当前阶需要的花费
             d[i] = Math.min(d[i - 1], d[i - 2]) + cost[i];
         }
         return Math.min(d[n - 2], d[n - 1]);
