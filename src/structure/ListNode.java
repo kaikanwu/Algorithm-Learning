@@ -5,10 +5,10 @@ package structure;
  * @date 24/10/2018
  */
 public class ListNode<T> {
-    public T val;
+    public int val;
     public ListNode<T> next;
 
-    public ListNode(T val) {
+    public ListNode(int val) {
         this.val = val;
         this.next = null;
     }
