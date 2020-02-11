@@ -1,5 +1,7 @@
 package leetcode;
 
+import structure.ListNode;
+
 /**
  *  Q:  反转一个单链表。
  *
@@ -8,18 +10,6 @@ package leetcode;
  */
 public class Q206_ReverseLinkedList {
 
-
-    /**
-     * Single Linked List
-     */
-    public class ListNode{
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
 
     /**
