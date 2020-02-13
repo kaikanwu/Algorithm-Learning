@@ -46,7 +46,6 @@ public class Q203_RemoveLinkedListElements {
 
     }
 
-
     /**
      *
      * Time: O(n), Space: O(1)
