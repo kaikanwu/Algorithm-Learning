@@ -36,6 +36,7 @@
 | 069  | sqrt (square root 平方根)                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q69_Sqrtx.java) |
 | 075  | Sort Colors                                    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q75_SortColors.java) |
 | 080  | Remove Duplicated From Sorted Array II         | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q80_RemoveDuplicatedFromSortedArrayII.java) |
+| 083  | Remove Duplicates From Sorted Linked List      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q83_RemoveDuplicatesFromSortedList.java) |
 | 088  | Merge Sorted Array                             | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q88_MergeSortedArray.java) |
 | 100  | Same Tree                                      | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q100_SameTree.java) |
 | 101  | Symmetric Tree                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q101_SymmetricTree.java) |
