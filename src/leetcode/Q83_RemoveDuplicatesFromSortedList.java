@@ -13,6 +13,8 @@ import structure.ListNode;
  * 输入: 1->1->2->3->3
  * 输出: 1->2->3
  *
+ * Solution: 使用两个游标
+ *
  * @author kaikanwu
  * @date 19/02/2020
  */
@@ -33,6 +35,7 @@ public class Q83_RemoveDuplicatesFromSortedList {
         ListNode n = head.next;
 
 
+        // 两个游标始终保持一前一后的情况
         while (n != null) {
 
             if (p.val == n.val) {
