@@ -22,7 +22,7 @@ public class Q160_IntersectionOfTwoLinkedList {
      */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 
-        if (headA == null && headB == null) {
+        if (headA == null || headB == null) {
             return null;
         }
 
