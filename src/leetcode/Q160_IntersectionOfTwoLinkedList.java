@@ -29,6 +29,7 @@ public class Q160_IntersectionOfTwoLinkedList {
         ListNode p = headA;
         ListNode q = headB;
 
+        // p q 在两条链表互相跳转
         while (p != q) {
             p = p == null ? headB : p.next;
             q = q == null ? headA : q.next;
