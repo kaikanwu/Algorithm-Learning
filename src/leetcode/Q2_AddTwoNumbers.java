@@ -22,48 +22,6 @@ import java.util.List;
  */
 public class Q2_AddTwoNumbers {
 
-
-    // wrong answer
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
-        long n1 = 0;
-        long n2 = 0;
-
-        long i = 1;
-        while (l1 != null) {
-
-            n1 += l1.val * i;
-            l1 = l1.next;
-            i = i * 10;
-        }
-        System.out.println("n1 = " + n1);
-        System.out.println("i1 = " + i);
-
-        i = 1;
-        while (l2 != null) {
-
-            n2 += l2.val * i;
-
-            l2 = l2.next;
-            i = i * 10;
-
-        }
-        long total = n1 + n2;
-        System.out.println(total);
-
-        ListNode result = new ListNode((int) (total % 10));
-        System.out.println(result.val);
-        ListNode p = result;
-
-        while (total >= 10) {
-            total = total / 10;
-            p.next = new ListNode((int) (total % 10));
-            p = p.next;
-        }
-        return result;
-    }
-
-
     /**
      *  Time: O(max(m,n)), Space: O(max(m,n))
      */
