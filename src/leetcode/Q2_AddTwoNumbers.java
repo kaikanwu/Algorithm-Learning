@@ -69,6 +69,7 @@ public class Q2_AddTwoNumbers {
      */
     public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0), p = dummy;
+        // carry 表示进位信息
         int carry = 0;
         while (l1 != null || l2 != null || carry != 0) {
             int sum = carry;
