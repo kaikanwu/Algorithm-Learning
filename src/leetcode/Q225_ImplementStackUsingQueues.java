@@ -42,6 +42,7 @@ public class Q225_ImplementStackUsingQueues {
 
         /** Removes the element on top of the stack and returns that element. */
         public int pop() {
+            // or poll()
             return queue.remove();
         }
 
