@@ -18,6 +18,7 @@ public class Q680_ValidPalindrome {
         int j = s.length() - 1;
         while (i < j) {
             if (s.charAt(i) != s.charAt(j)) {
+                // 不相等时，判断是否删除一个字符可以相等
                 return isPalindrome(s, i + 1, j) || isPalindrome(s, i, j - 1);
             }
             i++;
@@ -30,7 +31,7 @@ public class Q680_ValidPalindrome {
 
     private boolean isPalindrome(String s, int i, int j) {
 
-        // i == j 的情况，就是返回 true
+        // i == j 的情况，就是剩下单个字符，返回 true
         while (i < j) {
             if (s.charAt(i++) != s.charAt(j--)) {
                 return false;
