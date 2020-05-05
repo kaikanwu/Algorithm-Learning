@@ -11,7 +11,7 @@ public class Q70_ClimbingStairs {
      * 递归的方法：O(n^2)，会超时
      */
     public int climbingStairsRecursive(int n) {
-        if (n < 2) {
+        if (n <= 2) {
             return n;
         }
 
