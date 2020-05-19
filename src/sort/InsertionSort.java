@@ -12,9 +12,9 @@ public class InsertionSort {
             for (int j = i; j > 0 ; j--) {
 
                 if (arr[j] < arr[j-1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j-1];
-                    arr[j-1] = temp;
+                    int temp = arr[j-1];
+                    arr[j-1] = arr[j];
+                    arr[j] = temp;
                 }
             }
         }
@@ -28,7 +28,6 @@ public class InsertionSort {
 
         for (int i : arr) {
             System.out.print( i + " ");
-
         }
     }
 
