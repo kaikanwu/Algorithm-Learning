@@ -2,6 +2,10 @@ package sort;
 
 public class BubbleSort {
 
+
+    /**
+     * O（n^2）
+     */
     private static void bubbleSort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
