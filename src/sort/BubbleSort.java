@@ -4,7 +4,7 @@ public class BubbleSort {
 
 
     /**
-     * O（n^2）
+     * Time: O（n^2）
      */
     private static void bubbleSort(int[] arr) {
 
