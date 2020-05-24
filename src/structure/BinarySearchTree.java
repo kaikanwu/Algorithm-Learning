@@ -2,7 +2,7 @@ package structure;
 
 /**
  *
- * 二叉树的查找
+ * 二叉查找树
  *
  * @author kaikanwu
  * created on 5/24/2020
@@ -11,6 +11,9 @@ public class BinarySearchTree {
 
     private Node tree;
 
+    /**
+     * 查找
+     */
     public Node find(int data) {
         Node p = tree;
 
@@ -25,6 +28,34 @@ public class BinarySearchTree {
         }
         return null;
     }
+
+
+    public void insert(int data) {
+        if (tree == null) {
+            tree = new Node(data);
+            return;
+        }
+
+        Node p = tree;
+        while (p != null) {
+
+            if (data > p.data) {
+                // 如果右子树为空，则直接插入新节点
+                if (p.right == null) {
+                    p.right = new Node(data);
+                    return;
+                }
+                p = p.right;
+            } else {
+                if (p.left == null) {
+                    p.left = new Node(data);
+                    return;
+                }
+                p = p.left;
+            }
+        }
+    }
+
 
 
     public static class Node {
