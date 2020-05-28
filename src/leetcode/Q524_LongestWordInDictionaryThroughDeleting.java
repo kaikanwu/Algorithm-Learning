@@ -40,6 +40,7 @@ public class Q524_LongestWordInDictionaryThroughDeleting {
             }
             i++;
         }
+        // 相等时即 s 包含 target 的所有字符
         return j == target.length();
     }
 }
