@@ -79,6 +79,7 @@
 | 435  | Non Overlaping Intervals                       | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q435_NonOverlapingIntervals.java) |
 | 451  | Sort Characters By Frequency                   | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q451_SortCharactersByFrequency.java) |
 | 455  | Assign Cookies                                 | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q455_AssignCookies.java) |
+| 524  | Longest Word In Dictionary Through Deleting    | [Java](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q524_LongestWordInDictionaryThroughDeleting.java) |
 
 
 
@@ -122,7 +123,7 @@
 
 [009. IsPalindrome](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q9_IsPalindrome.java)
 
-
+[524. Longest Word In Dictionary Through Deleting](https://github.com/kaikanwu/Algorithm-Learning/blob/master/src/leetcode/Q524_LongestWordInDictionaryThroughDeleting.java)
 
 
 
