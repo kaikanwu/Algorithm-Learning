@@ -6,6 +6,10 @@ package leetcode;
  */
 public class Q796_RotateString {
 
+    /**
+     * Time O(n)
+     * Space O(1)
+     */
     public boolean rotateString(String A, String B) {
 
         // 处理边界情况
