@@ -12,8 +12,7 @@ public class Q796_RotateString {
         if (A.isEmpty() && B.isEmpty()) {
             return true;
         }
-
-        if (A.length() > B.length() || A.isEmpty()) {
+        if (A.length() != B.length()) {
             return false;
         }
 
