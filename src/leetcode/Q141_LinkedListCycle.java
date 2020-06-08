@@ -18,6 +18,20 @@ import java.util.HashSet;
 public class Q141_LinkedListCycle {
 
 
+     class ListNode{
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+
+
+
+    }
+
+
     /**
      * Time:O(n), Space:O(n)
      */
@@ -71,6 +85,29 @@ public class Q141_LinkedListCycle {
             l1 = l1.next;
             l2 = l2.next.next;
         }
+        return false;
+    }
+
+
+    /**
+     * Time:  O(n)
+     * Space: O(1)
+     */
+    public boolean hasCycle2(ListNode head) {
+        ListNode fast;
+        ListNode slow;
+
+        fast = head;
+        slow = head;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                return true;
+            }
+        }
+
         return false;
     }
 
