@@ -164,6 +164,19 @@
 
 ### New plan for 2020 
 
-- [ ] 250
-- [ ] 
+- [ ] 200
+
+
+
+
+
+## 解题思路
+
+
+
+[Dynamic Programming](https://github.com/kaikanwu/Algorithm-Learning/blob/master/note/DynamicProgramming.md)
+
+
+
+
 
