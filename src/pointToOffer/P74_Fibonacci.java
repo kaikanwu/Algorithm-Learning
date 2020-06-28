@@ -30,73 +30,93 @@ public class P74_Fibonacci {
 
 
     /**
-     * 方法二：
-     * @param n
-     * @return
+     * Solution 1:  传统递归
+     * <p>
+     * Time:O(2^n)
      */
-    private static int fibonacci2(int n) {
-        if (n <= 0) {
-            return 0;
-        }
-
-        if (n == 1) {
+    int fib(int n) {
+        if (n == 1 || n == 2) {
             return 1;
         }
 
-        int temp1 = 0, temp2 = 1;
-        int result = temp1 +temp2 , i = 3;
-
-        while (i <= n) {
-            temp1 = temp2;
-            temp2 = result;
-            result = temp1 + temp2;
-            i++;
-        }
-        return result;
-
+        return fib(n - 1) + fib(n - 2);
     }
 
 
     /**
-     * 方法三
-     * @param n
-     * @return
+     * Solution 2: use memo or hash table
+     * <p>
+     * Time: O(n)
      */
-    private static int fibonacci3(int n) {
-        if (n <= 1) {
-            return n;
+    int fib2(int n) {
+
+        if (n < 1) {
+            return 0;
         }
 
-        int[] fib = new int[n + 1];
+        int[] memo = new int[n];
 
-        fib[1] = 1;
+        return helper(memo, n);
+    }
 
-        for (int i = 2; i <= n; i++) {
-            fib[i] = fib[i - 1] + fib[i - 2];
+
+    private int helper(int[] memo, int n) {
+        if (n == 1 || n == 2) {
+            return 1;
         }
-        return fib[n];
 
+        if (memo[n] != 0) {
+            return memo[n];
+        }
+
+        memo[n] = helper(memo, n - 1) + helper(memo, n - 2);
+
+        return memo[n];
     }
 
 
     /**
-     * 方法五
-     * @param n
-     * @return
+     * Solution 3: use the dp table
+     *
+     * Time:  O(n)
+     * Space: O(n)
      */
-    private static int fibonacci4(int n) {
-        if (n <= 1) {
-            return n;
+    public int fib3(int n) {
+
+        int[] dp = new int[n + 1];
+
+        dp[1] = dp[2] = 1;
+
+        for (int i = 3; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
         }
 
-        int pre2 = 0, pre1 = 1;
-        int fib = 0;
-        for (int i = 2; i <= n; i++) {
-            fib = pre2 + pre1;
-            pre2 = pre1;
-            pre1 = fib;
+        return dp[n];
+    }
+
+
+    /**
+     * Solution 4:
+     *
+     * Time: O(n)
+     * Space: O(1)
+     */
+    public int fib4(int n) {
+
+        if (n == 1 || n == 2) {
+            return 1;
         }
-        return fib;
+
+        int pre = 1;
+        int curr = 1;
+
+        for (int i = 3; i <= n; i++) {
+            int sum = pre + curr;
+            pre = curr;
+            curr = sum;
+        }
+
+        return curr;
     }
 
 
