@@ -54,17 +54,12 @@ public class Q283_MoveZeros {
         }
     }
 
-
     /**
      * 方法二 交换
      */
     public static void moveZeroes2(int[] nums) {
-
-
         int i = 0;
-
         for (int j = 0; j < nums.length; j++) {
-
             if (nums[j] != 0) {
                 // 这样可以不让数字自己和自己交换
                 if (i != j) {
@@ -74,7 +69,6 @@ public class Q283_MoveZeros {
                 }
             }
         }
-
     }
 
     private static void swap(int[] arr, int i, int j) {
