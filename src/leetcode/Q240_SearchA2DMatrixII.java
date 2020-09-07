@@ -24,16 +24,13 @@ public class Q240_SearchA2DMatrixII {
         while (i<= matrix.length-1 && j>=0){
             if (matrix[i][j]< target){
                 i++;
-
             }
             else if (matrix[i][j] > target) {
                 j--;
-
             }
             else {
                 return true;
             }
-
         }
         return false;
     }
