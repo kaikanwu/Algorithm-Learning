@@ -27,18 +27,20 @@ public class KnapsackProblem {
         for (int i = 0; i < N + 1; i++) {
             dp[i][0] = 0;
         }
-
         for (int j = 0; j < W + 1; j++) {
             dp[0][j] = 0;
         }
 
+        // tn: traversed n，已遍历过的 n
+        // rw: reserved w，背包剩余的重量
         for (int tn = 1; tn < N + 1; tn++) {
-
             for (int rw = 1; rw < W + 1; rw++) {
 
                 if (rw < w[tn]) {
+                    // 当前背包剩余重量小于当前物品重量时，无法放入
                     dp[tn][rw] = dp[tn - 1][rw];
                 } else {
+                    // 做出决策：1. 放入背包的价值是：dp[tn - 1][rw - w[tn]] + v[tn]，2. 不放入的价值是：dp[tn-1][rw]
                     dp[tn][rw] = Math.max(dp[tn - 1][rw], dp[tn - 1][rw - w[tn]] + v[tn]);
                 }
             }
