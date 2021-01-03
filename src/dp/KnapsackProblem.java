@@ -1,5 +1,7 @@
 package dp;
 
+import java.util.Arrays;
+
 /**
  * Q：
  * 给你一个可放总重量为 W 的背包和 N 个物品，对每个物品，有重量 w 和价值 v 两个属性，
@@ -23,7 +25,7 @@ public class KnapsackProblem {
 
         int[][] dp = new int[N + 1][W + 1];
 
-        // init the array
+        // init the array -> base case
         for (int i = 0; i < N + 1; i++) {
             dp[i][0] = 0;
         }
@@ -45,6 +47,8 @@ public class KnapsackProblem {
                 }
             }
         }
+        System.out.println("after init: " + Arrays.deepToString(dp));
+
 
         return dp[N][W];
     }
