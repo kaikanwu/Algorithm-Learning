@@ -1,5 +1,6 @@
 package dp;
 
+import javax.xml.bind.annotation.W3CDomHandler;
 import java.util.Arrays;
 
 /**
@@ -59,6 +60,32 @@ public class KnapsackProblem {
         int[] v = {0, 5, 2, 3};
 
         return dp(w, v, N, W);
+    }
+
+
+    int dp2(int[] wt, int[] val, int N, int W) {
+
+        // init array
+        int[][] dp = new int[N + 1][W + 1];
+
+        for (int i = 0; i < N + 1; i++) {
+            dp[i][0] = 0;
+        }
+        for (int j = 0; j < W + 1; j++) {
+            dp[0][j] = 0;
+        }
+
+
+        for (int i = 1; i <= N; i++) {
+            for (int w = 1; w <= W; w++) {
+                if (w - wt[i - 1] < 0) {
+                    dp[i][w] = dp[i - 1][w];
+                } else {
+                    dp[i][w] = Math.max(dp[i - 1][w], dp[i - 1][w - wt[i - 1]] + val[i - 1]);
+                }
+            }
+        }
+        return dp[N][W];
     }
 
 }
