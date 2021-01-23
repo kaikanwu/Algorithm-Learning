@@ -1,5 +1,7 @@
 package leetcode;
 
+import leetcode.structure.TreeNode;
+
 import java.util.Stack;
 
 /**
@@ -13,17 +15,6 @@ import java.util.Stack;
  * @date 12/01/2019
  */
 public class Q100_SameTree {
-
-    public class TreeNode{
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x){
-            val = x;
-        }
-
-    }
 
     /**
      *  方法一： 迭代的方法

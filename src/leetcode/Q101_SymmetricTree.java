@@ -1,6 +1,8 @@
 package leetcode;
 
 
+import leetcode.structure.TreeNode;
+
 import java.util.Stack;
 
 /**
@@ -12,19 +14,6 @@ import java.util.Stack;
  * @date 11/01/2019
  */
 public class Q101_SymmetricTree {
-
-    /**
-     * Data Structure: TreeNode
-     */
-    public class TreeNode{
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x){
-            val = x;
-        }
-    }
 
     /**
      * 方法一：递归（recursive）
