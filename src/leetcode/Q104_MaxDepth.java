@@ -15,6 +15,7 @@ public class Q104_MaxDepth {
 
         int left = maxDepth(root.left);
         int right = maxDepth(root.right);
+        // 根据题意，只存在单个节点时，最大深度返回 1，所以这里需要对返回值 + 1
         return Math.max(left, right) + 1;
     }
 }
