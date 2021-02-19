@@ -27,10 +27,10 @@ public class Q572_Test {
     public void  test2() {
         TreeNode s = new TreeNode(1);
         s.left = new TreeNode(1);
-
         TreeNode t = new TreeNode(1);
         Q572_SubtreeOfAnotherTree subtreeOfAnotherTree = new Q572_SubtreeOfAnotherTree();
         boolean result = subtreeOfAnotherTree.isSubtree(s, t);
+        // 测试 测试
         Assert.assertTrue(result);
     }
 }
