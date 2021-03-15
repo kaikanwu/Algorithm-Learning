@@ -1,18 +1,17 @@
 package leetcode;
 
-import structure.ListNode;
+
+import leetcode.structure.ListNode;
 
 /**
- *  Q:  反转一个单链表。
- *  举例：     5->4->3->2->1->null
- *  反转后：   1->2->3->4->5->null
+ * Q:  反转一个单链表。
+ * 举例：     5->4->3->2->1->null
+ * 反转后：   1->2->3->4->5->null
  *
  * @author kaikanwu
- * @date 13/01/2019
+ * created on 13/01/2019
  */
 public class Q206_ReverseLinkedList {
-
-
 
     /**
      * Time:O(n)
