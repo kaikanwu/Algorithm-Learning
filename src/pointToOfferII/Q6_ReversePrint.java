@@ -3,6 +3,7 @@ package pointToOfferII;
 import leetcode.structure.ListNode;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -27,11 +28,32 @@ public class Q6_ReversePrint {
         return result;
     }
 
+    public static int[] reversePrint2(ListNode head) {
+
+        int length = 0;
+        ListNode node = head;
+        while (node != null) {
+            length++;
+            node = node.next;
+        }
+
+        int[] result = new int[length];
+//        for (int i = length - 1; i >= 0; i--) {
+//            result[i] = head.val;
+//        }
+        while (head != null) {
+            result[length - 1] = head.val;
+            length--;
+            head = head.next;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(3);
         head.next.next = new ListNode(2);
 
-        System.out.println(Arrays.toString(reversePrint(head)));
+        System.out.println(Arrays.toString(reversePrint2(head)));
     }
 }
