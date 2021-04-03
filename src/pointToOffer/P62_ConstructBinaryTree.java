@@ -7,14 +7,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *  7. 重建二叉树
- *
- *  题目：输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。
- *  假设输的前序遍历和中序遍历的结果中不含重复的数字。
- *
- *  解题思路：
- *  1. 叉树中，需要前序+中序，或者中序+后序 才能重建一个二叉树。 前序+后序 无法重建。
- *
+ * 7. 重建二叉树
+ * <p>
+ * 题目：输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。
+ * 假设输的前序遍历和中序遍历的结果中不含重复的数字。
+ * <p>
+ * 解题思路：
+ * 1. 叉树中，需要前序+中序，或者中序+后序 才能重建一个二叉树。 前序+后序 无法重建。
  *
  * @author kaikanwu
  * @date 25/10/2018
@@ -23,14 +22,15 @@ public class P62_ConstructBinaryTree {
 
 
     /**
-     *  方法 1
+     * 方法 1
+     *
      * @param preOrder 前序遍历的结果
-     * @param inOrder 中序遍历的结果
+     * @param inOrder  中序遍历的结果
      * @return
      */
     public static TreeNode construct(int[] preOrder, int[] inOrder) {
         if (preOrder == null || inOrder == null || preOrder.length == 0 || preOrder.length != inOrder.length) {
-            return  null;
+            return null;
         }
 
         return constructCore(preOrder, 0, inOrder, 0, preOrder.length);
@@ -38,12 +38,13 @@ public class P62_ConstructBinaryTree {
 
 
     /**
-     *  constructCore
+     * constructCore
+     *
      * @param preOrder
      * @param preOrderStart
      * @param inOrder
      * @param inOrderStart
-     * @param length preOrder 的长度
+     * @param length        preOrder 的长度
      * @return
      */
     public static TreeNode constructCore(int[] preOrder, int preOrderStart, int[] inOrder, int inOrderStart, int length) {
@@ -76,6 +77,7 @@ public class P62_ConstructBinaryTree {
 
     /**
      * FOR TEST!
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -86,8 +88,10 @@ public class P62_ConstructBinaryTree {
         //       / \
         //      4   5
 
-        int[] pre = {1, 2, 4, 5, 3};
-        int[] in = {4, 2, 5, 1, 3};
+//        int[] pre = {1, 2, 4, 5, 3};
+//        int[] in = {4, 2, 5, 1, 3};
+        int[] pre = {3,9,20,15,7};
+        int[] in = {9,3,15,20,7};
 
         TreeNode root = construct(pre, in);
 
