@@ -46,4 +46,8 @@ public class Q7_BuildTree {
         return node;
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }
