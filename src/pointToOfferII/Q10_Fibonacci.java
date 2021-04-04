@@ -32,11 +32,15 @@ public class Q10_Fibonacci {
         dp[1] = dp[2] = 1;
 
         for (int i = 3; i <= n; i++) {
-            dp[i] = dp[i - 1] + dp[i - 2];
+            // 根据题目要求，返回值需要取模
+            dp[i] = (dp[i - 1] + dp[i - 2])%1000000007;
         }
         return dp[n];
     }
 
+    /**
+     * 防止值溢出 int 范围
+     */
     public int fib3(int n) {
         int a = 0, b = 1, sum;
         for (int i = 0; i < n; i++) {
